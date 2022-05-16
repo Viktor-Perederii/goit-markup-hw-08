@@ -1,0 +1,120 @@
+.header,
+.nav {
+	display: flex;
+	align-items: center;
+}
+
+.nav-list .link.active {
+	color: var(--accent-hover);
+	position: relative;
+}
+
+.active::after {
+	position: absolute;
+	display: block;
+	content: "";
+
+	left: 0;
+	bottom: -32px;
+	width: 100%;
+	height: 4px;
+	background-color: var(--accent-hover);
+	border-radius: 2px;
+}
+
+/* site nav */
+.page-header {
+	position: relative;
+	background-color: var(--bg-cl-com);
+	padding-top: 24px;
+	padding-bottom: 24px;
+	border-bottom: 1px solid var(--portfolio-line);
+}
+.logo {
+	font-family: "Raleway", sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	color: var(--add-bckg-cl);
+}
+.logo-web {
+	color: var(--accent-hover);
+}
+
+/* .nav, */
+.nav-list {
+	display: flex;
+	margin-left: 93px;
+	.nav-item:not(:last-child) {
+		margin-right: 50px;
+	}
+	.link {
+		color: var(--font-cl-com);
+		font-style: normal;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 1.14;
+		transition-property: color;
+		transition-duration: 250ms;
+		transition-timing-function: var(--transition-func);
+	}
+}
+
+.nav-item .link:hover,
+.nav-item .link:focus {
+	color: var(--accent-hover);
+}
+
+.contacts {
+	display: flex;
+	margin-left: auto;
+	justify-content: center;
+	align-items: center;
+	.link {
+		color: var(--font-cl-sc);
+		font-size: 14px;
+		line-height: 1.14;
+		font-weight: 500;
+		letter-spacing: 0.02em;
+		transition-property: color;
+		transition-duration: var(--transition-time);
+		transition-timing-function: var(--transition-func);
+	}
+}
+
+.contact-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.contacts &:not(:last-child) {
+		margin-right: 50px;
+	}
+}
+
+.mail-svg,
+.phone-svg {
+	margin-right: 10px;
+	fill: var(--font-cl-sc);
+	vertical-align: middle;
+	transition-property: color, fill;
+	transition-duration: var(--transition-time);
+	transition-timing-function: var(--transition-func);
+}
+
+.mail:hover,
+.mail:focus,
+.phone:hover,
+.phone:focus {
+	color: var(--accent-hover);
+}
+
+.mail:hover .mail-svg,
+.mail:focus .mail-svg {
+	fill: var(--accent-hover);
+}
+.phone:hover .phone-svg,
+.phone:focus .phone-svg {
+	fill: var(--accent-hover);
+}

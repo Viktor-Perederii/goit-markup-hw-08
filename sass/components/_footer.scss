@@ -1,0 +1,126 @@
+.page-footer {
+  background-color: var(--add-bckg-cl);
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  display: flex;
+
+  .logo {
+    color: var(--bg-cl-com);
+  }
+}
+
+.studio-contacts {
+  font-style: normal;
+  margin-top: 20px;
+}
+
+.adress .link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--bg-cl-com);
+}
+
+.footer-contact {
+  margin-top: 9px;
+  .link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.footer-social-text {
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  margin-bottom: 20px;
+}
+.footer-box {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-social {
+  width: 206px;
+  height: 80px;
+  margin-left: 70px;
+}
+
+.footer-socials-item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.footer-socials-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: background-color;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--transition-func);
+
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+  }
+}
+
+///form////
+
+.subscribe-btn {
+  margin-top: 0;
+}
+
+.footer-form {
+  margin-left: 93px;
+}
+.footer-form-input {
+  min-width: 358px;
+  padding: 15px;
+  padding-left: 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: transparent;
+  background-color: transparent;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.subscribe-btn {
+  padding: 10px 29px;
+  margin-left: 12px;
+
+  &::after {
+    content: '';
+    display: inline-block;
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    background-image: url(../images/icon-telegram.svg);
+  }
+}

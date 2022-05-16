@@ -1,0 +1,54 @@
+@keyframes modal-w {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	width: 528px;
+	/* height: 581px; */
+
+	z-index: 100;
+	padding: 40px;
+	background-color: #ffffff;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+		0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+
+	animation-name: modal-w;
+	animation-duration: 2500ms;
+	animation-timing-function: 0.4, 0, 0.2, 1;
+}
+.close-btn {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	width: 30px;
+	height: 30px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	padding: 0 0;
+	background-color: transparent;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 50%;
+	cursor: pointer;
+
+	transition-property: fill;
+	transition-duration: var(--transition-time);
+	transition-timing-function: var(--transition-func);
+
+	&:hover .modal-close,
+	&:focus .modal-close {
+		fill: #2196f3;
+	}
+}

@@ -1,0 +1,32 @@
+.clients-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #afb1b8;
+}
+.client-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 170px;
+	height: 92px;
+	border: 1px solid #afb1b8;
+	border-radius: 4px;
+
+	transition-property: fill, color;
+	transition-duration: var(--transition-time);
+	transition-timing-function: var(--transition-func);
+
+	&:not(:last-child) {
+	margin-right: 30px;
+}
+	&:hover {
+	color: #2196f3;
+	border-color: #2196f3;
+}
+}
+.client-svg {
+	fill: currentColor;
+}
+
+  
