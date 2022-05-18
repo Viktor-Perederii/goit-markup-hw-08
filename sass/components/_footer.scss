@@ -4,8 +4,6 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  display: flex;
-
   .logo {
     color: var(--bg-cl-com);
   }
@@ -14,6 +12,9 @@
 .studio-contacts {
   font-style: normal;
   margin-top: 20px;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
 }
 
 .adress .link {
@@ -24,7 +25,11 @@
 }
 
 .footer-contact {
-  margin-top: 9px;
+  margin-top: 8px;
+  @include desktop {
+    margin-top: 9px;
+  }
+
   .link {
     font-weight: 400;
     font-size: 14px;
@@ -42,15 +47,29 @@
 
   margin-bottom: 20px;
 }
+
 .footer-box {
-  display: flex;
-  align-items: baseline;
+  text-align: center;
+  @include desktop {
+    display: flex;
+    align-items: baseline;
+    text-align: left;
+  }
+}
+.footer-wrap {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+  }
 }
 
 .footer-social {
-  width: 206px;
-  height: 80px;
-  margin-left: 70px;
+  @include desktop {
+    width: 206px;
+    height: 80px;
+    margin-left: 70px;
+  }
 }
 
 .footer-socials-item:not(:last-child) {
@@ -59,7 +78,7 @@
 .footer-socials {
   display: flex;
   justify-content: center;
-  margin-top: 16px;
+  margin-top: 20px;
 }
 
 .footer-socials-link {
@@ -89,10 +108,21 @@
 }
 
 .footer-form {
-  margin-left: 93px;
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @include desktop {
+    margin-left: 93px;
+  }
 }
+
 .footer-form-input {
-  min-width: 358px;
+  min-width: 450px;
   padding: 15px;
   padding-left: 16px;
 
@@ -108,12 +138,14 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
   }
+  @include desktop {
+    min-width: 358px;
+  }
 }
 
 .subscribe-btn {
   padding: 10px 29px;
-  margin-left: 12px;
-
+  margin-top: 20px;
   &::after {
     content: '';
     display: inline-block;
@@ -122,5 +154,9 @@
     height: 24px;
     vertical-align: middle;
     background-image: url(../images/icon-telegram.svg);
+  }
+  @include desktop {
+    margin-left: 12px;
+    margin-top: 0px;
   }
 }
