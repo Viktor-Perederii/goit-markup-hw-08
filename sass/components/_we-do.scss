@@ -1,42 +1,44 @@
 .we-do {
-	background-color: var(--bg-cl-com);
+  background-color: var(--bg-cl-com);
+  padding-top: 0;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .we-do__list {
-	display: flex;
+  display: flex;
 }
 
-.we-do__header,
-.team-header,
-.clients-header {
-	margin-bottom: 50px;
+.we-do__header {
+  margin-bottom: 50px;
 
-	font-size: 36px;
-	line-height: 1.16;
-	text-align: center;
-	letter-spacing: 0.03em;
-	color: var(--font-cl-com);
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--font-cl-com);
 }
 .we-do__item {
-	position: relative;
-	&:not(:last-child) {
-	margin-right: 30px;
-}
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .we-do__text {
-	position: absolute;
+  position: absolute;
 
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	padding: 27px 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 27px 0;
 
-	background: rgba(47, 48, 58, 0.8);
-	font-weight: 700;
-	letter-spacing: 0.03em;
-	text-transform: uppercase;
-	color: #ffffff;
+  background: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
 
-	text-align: center;
+  text-align: center;
 }
