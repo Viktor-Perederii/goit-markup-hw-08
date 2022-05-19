@@ -25,6 +25,9 @@
   animation-name: modal-w;
   animation-duration: 2500ms;
   animation-timing-function: 0.4, 0, 0.2, 1;
+  @media screen and (max-width: 479px) {
+    width: 316px;
+  }
 
   @include desktop {
     width: 528px;
