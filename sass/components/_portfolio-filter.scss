@@ -1,42 +1,57 @@
 .portfolio {
-	background-color: var(--bg-cl-com);
-	padding-top: 94px;
-	padding-bottom: 94px;
+  background-color: var(--bg-cl-com);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
-.filter {
-	display: flex;
 
-	margin-bottom: 50px;
-	justify-content: center;
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  @include tablet {
+    margin-bottom: 30px;
+  }
+  @include desktop {
+    margin-bottom: 50px;
+  }
+}
+.filter-btn {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
 }
 
 .filter-btn:not(:first-child) {
-	margin-left: 8px;
+  margin-left: 8px;
 }
 .btn {
-	border: none;
-	font-size: 16px;
-	line-height: 1.62;
-	font-weight: 500;
-	letter-spacing: 0.03em;
-	text-align: center;
-	color: var(--font-cl-com);
-	background-color: var(--add-bckg-btn);
-	border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  line-height: 1.62;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--font-cl-com);
+  background-color: var(--add-bckg-btn);
+  border-radius: 4px;
 
-	cursor: pointer;
+  cursor: pointer;
 
-	padding: 6px 22px;
+  padding: 6px 22px;
 
-	transition-property: color, background-color, box-shadow;
-	transition-duration: var(--transition-time);
-	transition-timing-function: var(--transition-func);
+  transition-property: color, background-color, box-shadow;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--transition-func);
 }
 
 .filter-btn :hover,
 .filter-btn :focus {
-	background-color: var(--accent-hover);
-	color: var(--bg-cl-com);
-	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-		0px 2px 2px rgba(0, 0, 0, 0.12);
+  background-color: var(--accent-hover);
+  color: var(--bg-cl-com);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
