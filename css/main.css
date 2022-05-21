@@ -880,11 +880,6 @@ body {
   font-style: normal;
   margin-top: 20px;
 }
-@media screen and (max-width: 1199px) {
-  .studio-contacts {
-    margin-bottom: 60px;
-  }
-}
 
 .adress .link {
   font-weight: 400;
@@ -915,6 +910,12 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-part {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-box {
@@ -1170,6 +1171,13 @@ body {
 }
 
 .project-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   -webkit-transition-property: -webkit-box-shadow;
@@ -1199,6 +1207,9 @@ body {
 }
 
 .proj-text-cover {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
@@ -1277,6 +1288,7 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   visibility: visible;
+  z-index: 10;
 }
 
 .backdrop.is-hidden {

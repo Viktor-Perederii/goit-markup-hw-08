@@ -1,4 +1,7 @@
 .project-item {
+  display: flex;
+  flex-direction: column;
+
   flex-basis: 100%;
 
   transition-property: box-shadow;
@@ -19,11 +22,14 @@
 }
 
 .proj-text-cover {
+  flex-grow: 1;
+
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   padding: 20px 24px;
 }
+
 .portfolio-projects {
   display: flex;
   flex-wrap: wrap;

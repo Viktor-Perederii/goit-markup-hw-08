@@ -12,9 +12,6 @@
 .studio-contacts {
   font-style: normal;
   margin-top: 20px;
-  @media screen and (max-width: 1199px) {
-    margin-bottom: 60px;
-  }
 }
 
 .adress .link {
@@ -46,6 +43,12 @@
   color: #ffffff;
 
   margin-bottom: 20px;
+}
+
+.footer-part {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-box {
